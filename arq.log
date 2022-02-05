@@ -1,0 +1,31 @@
+testsqlite - INFO - Creating table test_table
+testsqlite - INFO - Line executed CREATE TABLE IF NOT EXISTS test_table(name TEXT, age INTEGER) in test_table: 
+testsqlite - INFO - Table test_table createdzn
+testsqlite - INFO - Creating column cpf TEXT in test_table
+testsqlite - INFO - Line executed ALTER TABLE test_table ADD COLUMN cpf TEXT in cpf TEXT: test_table
+testsqlite - INFO - Column "cpf TEXT" created in test_table
+
+testsqlite - INFO - Inserting data into test_table
+testsqlite - INFO - Line executed INSERT INTO test_table (name, age, cpf) VALUES ('jorja', 145, '321.321.321-33') in test_table: test.db
+testsqlite - INFO - Data inserted in test_table
+
+testsqlite - INFO - Inserting data line into test_table
+testsqlite - INFO - Line executed INSERT INTO test_table VALUES ('jorjim', 145, '121.121.212-21') in test_table: test.db
+testsqlite - INFO - Data inserted in test_table
+
+testsqlite - INFO - Updating data in test_table
+testsqlite - INFO - Line executed UPDATE test_table SET name = 'jorjim', age = 21, cpf = '123.123.123-31' WHERE name = 'jorjim' in test_table: test.db
+testsqlite - INFO - Data updated in test_table
+
+testsqlite - INFO - Deleting value 'jorjim' in name
+testsqlite - INFO - Line executed DELETE FROM test_table WHERE name = 'jorjim' in name: test_table
+testsqlite - INFO - Value test_table deleted from 'jorjim' -> name
+
+testsqlite - INFO - Deleting column name from test_table
+testsqlite - INFO - Line executed ALTER TABLE test_table DROP COLUMN name in name: test_table
+testsqlite - INFO - Column name deleted from test_table
+
+testsqlite - INFO - Deleting table test_table
+testsqlite - INFO - Line executed DROP TABLE IF EXISTS test_table in test_table: test.db
+testsqlite - INFO - Table test_table dropped
+
